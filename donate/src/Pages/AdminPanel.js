@@ -19,8 +19,8 @@ function AdminPanel() {
 
     const role = localStorage.getItem('role')
     console.log("2role", role)
-    const baseUrl = 'http://localhost:4000/api/organization/';
-    const baseUrl2 = 'http://localhost:4000/api/user/userCount';
+    const baseUrl = 'https://donation-complete-solution-purnota-3.onrender.com/api/organization/';
+    const baseUrl2 = 'https://donation-complete-solution-purnota-3.onrender.com/api/user/userCount';
     const { user } = useAuthContext()
     console.log('role')
     const [pst, setPst] = useState(null);
