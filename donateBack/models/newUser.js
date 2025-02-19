@@ -1,7 +1,6 @@
 const mongoose= require('mongoose')
 const bcrypt=require('bcryptjs')
 var validator = require('validator');
-const { hash } = require('bcrypt')
 
 
 const newUser= mongoose.Schema({
