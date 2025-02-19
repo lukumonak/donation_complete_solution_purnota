@@ -74,7 +74,7 @@ console.log(auto_id)
         const dataToVerify = { auto_id, Organization_full_name, Organization_register_number, District, pincode, contect_no, website_link }
 
 
-        const response = await fetch('http://localhost:4000/api/organization/verify', {
+        const response = await fetch('https://donation-complete-solution-purnota-3.onrender.com/api/organization/verify', {
             method: 'POST',
             headers: {
                 'Accept': 'Application/json',
