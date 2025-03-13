@@ -30,6 +30,9 @@ function Nvbar() {
     navigate('/')
 
   }
+  const role = localStorage.getItem('role')
+  const active = localStorage.getItem('active')
+  console.log("ac", active)
 
   return (
     <nav className="nvbr ">
@@ -39,34 +42,47 @@ function Nvbar() {
         <ul className={mobile ? "nv-links-mobile " : "nv-links"} >
           <Link to='/'><li>Home</li></Link>
           <Link to='/aboutus'><li>About Us</li></Link>
-          <Link to='/help'><li>Need Help</li></Link>
           <Link to='/donate'><li>Donate</li></Link>
-          <Link to='/signuporg'><li>signuporg</li></Link>
+
+          {user && role === 'ADMIN' ? (
+            <Link to='/admin'><li>Admin Panel</li></Link>
+          ) : (
+            <Link to=''></Link>
+          )}
+
+          {user && active === 'true' ? (
+            <Link to='/org'><li>Orgazition access</li></Link>
+          ) : (
+            <Link to='/signuporg'><li>Collaborate</li></Link>
+          )}
 
 
-        
-          </ul>
-
-          <div className="pb-3">
-            {user && (
-              <li>
-                {/* <span style={{color:'red',fontSize:'4px'}}>{user.email}</span> */}
-                <button onClick={logoutFrom} className="ml-6 h5" style={{ left: '88px', color: 'white' }} >log out <TbLogout />
-                </button>
-              </li>
-            )}
-            {!user && (
-              <li >
-                <button onClick={logoutFrom} className="ml-6 h5" style={{ left: '88px', color: 'white' }}>Sign in <PiSignInBold />
-                
-                </button>
-              </li>
-            )}
-          </div>
-          
+          {/* <Link to='/admin'><li>Admin</li></Link> */}
 
 
-        
+
+        </ul>
+
+        <div className="pb-3">
+          {user && (
+            <li>
+              {/* <span style={{color:'red',fontSize:'4px'}}>{user.email}</span> */}
+              <button onClick={logoutFrom} className="ml-6 h5" style={{ left: '88px', color: 'white' }} >log out <TbLogout />
+              </button>
+            </li>
+          )}
+          {!user && (
+            <li >
+              <button onClick={logoutFrom} className="ml-6 h5" style={{ left: '88px', color: 'white' }}>Sign in <PiSignInBold />
+
+              </button>
+            </li>
+          )}
+        </div>
+
+
+
+
 
 
 

@@ -95,7 +95,19 @@ const Login = () => {
               </Form>
             </div>
 
-
+            <div className='p-1'><h5>Normal user</h5>
+<h6>use email: mj@gmail.com</h6>
+<h6>password: abcABC@123</h6></div>
+            <div className='p-1'>
+              <h5>organization user</h5>
+              <h6>email: aman@gmail.com</h6>
+              <h6>password: abcABC@123</h6>
+            </div>
+            <div className='p-1'>
+              <h5>Admin</h5>
+              <h6>email: muku@gmail.com</h6>
+              <h6>password: abcABC@123</h6>
+            </div>
           </MDBCol>
         </MDBRow>
       </MDBContainer>

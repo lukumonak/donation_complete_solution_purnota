@@ -1,0 +1,83 @@
+[33mcommit a801c95b129c133ea810c53056c354ab8aaa5a08[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Luku <lukumonidoloi88451@gmail.com>
+Date:   Thu Mar 13 23:56:56 2025 +0530
+
+    Resolved merge conflicts
+
+[33mcommit 59791bdac279931cab84d9439bc3ede2c9a5a4cc[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:44:27 2025 +0530
+
+    Update package.json
+
+[33mcommit f1dc6a56feb1715683c9b36f2653d8eb932bd417[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:24:06 2025 +0530
+
+    Update useSignup.js
+
+[33mcommit cfa110baa535ce07fef2ac1ff76756fad83500ce[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:23:39 2025 +0530
+
+    Update useOrgnizationSignup.js
+
+[33mcommit b908f14e1a9027979dace93c8068d00f8a2a7372[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:23:01 2025 +0530
+
+    Update useLogin.js
+
+[33mcommit df84bddea38b6102136f070224d3928ca94a05de[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:20:55 2025 +0530
+
+    Update OrgaRegForm.js
+
+[33mcommit 2ab5febb0e636b9a33b7fa92ff0811cd7fa14cc4[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:19:01 2025 +0530
+
+    Update Donate.js
+
+[33mcommit c371378b618a692b22a3f6e01fff37bffb78018e[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:17:28 2025 +0530
+
+    Update SpecialAccess.js
+
+[33mcommit 6d457ee2cbb24c4d14677641a9ca05a79608a434[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:16:14 2025 +0530
+
+    Update OrgAccess.js
+
+[33mcommit 3b5290c7bc3a92895d1193a519fe12300acc1a73[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 20:14:42 2025 +0530
+
+    Update AdminPanel.js
+
+[33mcommit cdc1454266acb44cbd8ed079512b536785cbf1a9[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 19:56:58 2025 +0530
+
+    Update .env
+
+[33mcommit 26648752637c2c07feeadf17ced1856cb30f52e5[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 18:43:56 2025 +0530
+
+    Update newUser.js
+
+[33mcommit d9da839651fb090810d83c0ef4378ad0d7489c7c[m
+Author: lukumoni Daloi <98244700+lukumonak@users.noreply.github.com>
+Date:   Wed Feb 19 18:34:14 2025 +0530
+
+    Update package.json
+
+[33mcommit 07d0f8ac7ec1a90127ebff091c0083878dfd79cd[m
+Author: Luku <lukumonidoloi88451@gmail.com>
+Date:   Wed Feb 19 18:08:16 2025 +0530
+
+    first commit

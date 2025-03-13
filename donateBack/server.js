@@ -20,7 +20,7 @@ app.use((req, res, next)=>{
 })
 
 connectDB().then(()=>{
-    app.listen(process.env.PORT,()=>{
+    app.listen(process.env.PORT ||4000,()=>{
         console.log(`listin on port ${process.env.PORT} maybe`)
     }) 
 

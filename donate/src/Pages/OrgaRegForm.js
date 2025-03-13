@@ -5,7 +5,7 @@ import '../Components/cssfiles/orgReg.css'
 import imgorg from '../assets/images2.jpg'
 
 
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Navbr from '../Components/Navbr'
 import { useEffect, useRef, useState } from 'react';
 import { useAuthContext } from '../hooks/useAuthContext';
@@ -25,41 +25,41 @@ function OrgaRegForm() {
     const inputRef5 = useRef()
     const inputRef6 = useRef()
 
-  const user=useAuthContext()
-  const [orgAccess,setorgAccess]=useState(false)
+    const user = useAuthContext()
+    const [orgAccess, setorgAccess] = useState(false)
 
-  const active = localStorage.getItem('active')
+    const active = localStorage.getItem('active')
 
-  useEffect(()=>{
-    if( user && active==='false'){
-        setorgAccess(false)
+    useEffect(() => {
+        if (user && active === 'false') {
+            setorgAccess(false)
+        }
+        if (user && active === 'true') {
+            setorgAccess(true)
+        }
+    }, [user])
+
+
+
+    if (user.user === null) {
+        alert('you need to logged in')
     }
-    if(user && active==='true'){
-        setorgAccess(true)
-    }
-  },[user])
+
+    // get the token and decode to id for adding in varify form
+
+    const [error, setError] = useState(false)
+
+    const token = localStorage.getItem('user')
+    const parsetoken = JSON.parse(token)
+    const usertoken = parsetoken.token
+
+    const tokenObj = jwtDecode(usertoken)
+    const auto_id = tokenObj._id
+    console.log(auto_id)
 
 
+    // 
 
-  if(user.user===null){
-    alert('you need to logged in')
-   }
-   
-// get the token and decode to id for adding in varify form
-
-const [error,setError]=useState(false)   
-
-const token =localStorage.getItem('user')
-const parsetoken=JSON.parse(token)
-const usertoken=parsetoken.token
-
-const tokenObj=jwtDecode(usertoken)
-const auto_id=tokenObj._id
-console.log(auto_id)
-
-
-// 
-   
 
 
 
@@ -97,9 +97,9 @@ console.log(auto_id)
 
     }
     return (<>
-    <Navbr />
+        <Navbr />
 
-    <div className="">&lt; About us  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis fugiat, distinctio repellat facere amet. Accusamus quaerat a qui voluptas eum tempora sequi necessitatibus voluptatem exercitationem consequuntur explicabo, incidunt nemo modi saepe doloribus quas perspiciatis assumenda eligendi tenetur. Error similique consequatur laudantium sequi doloribus.&gt;</div>
+        <div className="">&lt; About us  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis fugiat, distinctio repellat facere amet. Accusamus quaerat a qui voluptas eum tempora sequi necessitatibus voluptatem exercitationem consequuntur explicabo, incidunt nemo modi saepe doloribus quas perspiciatis assumenda eligendi tenetur. Error similique consequatur laudantium sequi doloribus.&gt;</div>
 
 
 
@@ -137,19 +137,32 @@ console.log(auto_id)
                     <Form.Control type="Landmark" ref={inputRef6} placeholder="example.com" />
                 </Form.Group>
 
-            {<div className='error' style={{color:'red'}}>{error}</div>}
+                {<div className='error' style={{ color: 'red' }}>{error}</div>}
 
                 <Button className='btn1 mt-4' onClick={verifyData}>verify</Button>
-         <Link Link style={{display:'flex',justifyContent:"center"}} to={orgAccess ? "/org" : "/"}>Go to Org page</Link>
-                
+
+
+                <Link
+                    to={orgAccess ? "/org" : "/"}
+                    onClick={(e) => {
+                        if (!orgAccess) {
+                            e.preventDefault();  // Prevent navigation
+                            alert("You are not registered as an organization.");
+                        }
+                    }}
+                    style={{ display: 'flex', justifyContent: "center" }}
+                >F
+                    Go to Org page
+                </Link>
+
             </Form>
         </div>
 
         <Footer />
 
-      
-      
-      
+
+
+
     </>
     );
 }

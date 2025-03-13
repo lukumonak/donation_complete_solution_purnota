@@ -39,7 +39,7 @@ navigate('/')
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
       </Form.Group>
-      <Button className='btn1 mt-4' type='submit'>login</Button>
+      <Button className='btn1 mt-4' style={{ backgroundColor: "#207882" }} type='submit'>login</Button>
       {error && <div className='error'>{error}</div>}
     </Form>
 

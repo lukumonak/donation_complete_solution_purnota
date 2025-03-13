@@ -156,8 +156,8 @@ function Donate() {
             </Form.Group>
 
             {<div className='error' style={{ color: 'red' }}>{error}</div>}
-            <Button className='btn1 mt-4' onClick={submitForm}>submit</Button>
-            <Link style={{ display: 'flex', justifyContent: "center" }} to="/access">your Uploads</Link>
+            <Button className='btn1 mt-4' onClick={submitForm} style={{ backgroundColor: "#207882" }}>submit</Button>
+            <Link style={{color:'#207882', display: 'flex', justifyContent: "center" }} to="/access">your Uploads</Link>
 
           </Form>
 

@@ -211,7 +211,7 @@ function AdminPanel() {
                                         <td>{item.contect_no}</td>
                                         <td>{item.website_link}</td>
                                         {/* <td><Button className=" btn btn-success position-sticky float-end mx-2" onClick={() => buttonClick(item.auto_id)}>{state}</Button></td> */}
-                                        <td><Button id={item.auto_id} className={(state[item.auto_id] ? 'btn btn-danger position-sticky float-end mx-2' : 'btn btn-success position-sticky float-end mx-2')} onClick={() => buttonClick(item.auto_id)}>{
+                                        <td><Button id={item.auto_id}  style={{ backgroundColor: "#207882" }}className={(state[item.auto_id] ? 'btn btn-danger position-sticky float-end mx-2' : 'btn btn-success position-sticky float-end mx-2')} onClick={() => buttonClick(item.auto_id)}>{
                                             state[item.auto_id] ? 'revoke' : 'grant'
                                         }</Button></td>
                                         {/* <td><Button className=" btn btn-danger position-sticky float-end mx-2">DELETE</Button></td> */}

@@ -3,14 +3,11 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import AboutUs from './Pages/AboutUs';
-import NeedHelp from './Pages/NeedHelp';
 import Publication from './Pages/Publication';
 import Donate from './Pages/Donate';
-import SupportUs from './Pages/SupportUs';
 import Login from './Pages/Login';
 import SpecialAccess from './Pages/SpecialAccess';
 import Signup from './Pages/Signup';
-import OuterNav from './Components/OuterNav';
 import AdminPanel from './Pages/AdminPanel';
 import OrgAccess from './Pages/OrgAccess';
 import OrgaRegForm from './Pages/OrgaRegForm';
@@ -31,9 +28,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<HomePage />}></Route>
         <Route path='/aboutus' element={<AboutUs />}></Route>
-        <Route path='/help' element={<NeedHelp />}></Route>
         <Route path='/publication' element={<Publication />}></Route>
-        <Route path='/support' element={<SupportUs />}></Route>
         <Route path='/fmessage' element={<Fmessage />}></Route>
         <Route path='/accessdenied' element={<AccessDenied />}></Route>
         <Route exact path='/login' element={<Login />}></Route>

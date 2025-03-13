@@ -5,6 +5,7 @@ import img3 from '../assets/images3.jpg'
 import img5 from '../assets/images5.jpg'
 import img6 from '../assets/images6.jpg'
 import img7 from '../assets/images7.jpg'
+import img8 from '../assets/passport.jpg'
 import works1 from '../assets/1.png'
 import works2 from '../assets/2.png'
 import works3 from '../assets/3.png'
@@ -53,6 +54,11 @@ function AboutUs() {
       id: 9,
       imgshow: img6
     },
+    {
+      id: 10,
+      imgshow: img8
+    },
+    
   ]
 
 
@@ -70,7 +76,9 @@ function AboutUs() {
 
       <div className="container">
         <div className="heading_about1">Our History</div>
-        <p style={{ margin: '40px' }}>Lorem ipsum dolor sit amet consectetur quasi vel saepe? Quasi et corporis modi, ratione accusamus impedit, blanditiis Lorem ipsum dolor, sit amet consectetur adipisicing.hic dolor eum veritatis asperiores? adipisicing elit. Qui veniam quidem quisquam illum et nam facere delectus excepturi doloremque. Facere incidunt qui nesciunt corporis, sit tempore eum architecto fugit maxime perspiciatis deleniti dolore cumque culpa, dolor ad sint modi rem expedita iste odiautem?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati velit nobis deleniti nesciunt in voluptatum at, perferendint quibusdam quas asperiores voluptates tempora reiciendis possimus quae ad inciduntquasi vel saepe? Quasi et corporis modi, ratione accusamus impedit,anditiis hic dolor eum veritatis asperiores?</p>
+        <p style={{ margin: '40px' }}>
+        Purnota is a centralized platform that connects donors, registered organizations, and people in need. It simplifies the donation process, making it easier for users to contribute. Donors can list items such as clothes, books, or household essentials. Registered organizations view these listings, arrange pickups, and deliver the donated items to beneficiaries. Purnota monitors the entire process to ensure smooth operations. Notifications are sent to donors and organizations during key stages, ensuring transparency and accountability throughout the process. Founded in 20##, Purnota started as a small initiative to connect donors with trusted organizations. It quickly grew, expanding its reach and ensuring donations effectively reached those in need.
+          </p>
       </div>
 
 
@@ -78,34 +86,39 @@ function AboutUs() {
         <h1 style={{ margin: '20px', backgroundColor: '#349782', color: 'white' }}>How Purnota works ?</h1>
       </div>
 
-      <div className="work">
+      <div className="work h4">
 
-        <div className='works'>
+        <div className='works '>
           <img className="works_img" src={works3} alt="" />
           <div className="works_text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat eos. Vitae totam tempora nihil quia esse! Animi dicta aspernatur ipsum illum nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda nesciunt excepturi odit quisquam sequi distinctio, explicabo, adipisci delectus corporis, sapiente ipsam consequatur aliquid non! Quam perferendis omnis tempora assumenda ipsam provident. Eligendi, repudiandae?</p>
+            <p>
+              
+            Purnota is a centralized platform that connects donors, registered organizations, and people in need. It simplifies the donation process, making it easier for users to contribute.
+
+            </p>
           </div>
         </div>
         <div className='works'>
           <div className="works_text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat eos. Vitae totam tempora nihil quia esse! Animi dicta aspernatur ipsum illumillum nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-              nesciunt excepturi odit quisquam sequi distinctio, explicabo, adipisci delectus corporis, sapiente ipsam consequatur aliquid non! Quam perferendis nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas!</p>
+            <p>
+            Donors can list items such as clothes, books, or household essentials. Registered organizations view these listings, arrange pickups, and deliver the donated items to beneficiaries.
+              
+              </p>
           </div>
           <img className="works_img" src={works4} alt="" />
         </div>
         <div className='works'>
           <img className="works_img" src={works2} alt="" />
           <div className="works_text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat eos. Vitae totam tempora nihil quia esse! Animi dicta aspernatur ipsum illumillum nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-              nesciunt excepturi odit quisquam sequi distinctio, explicabo, adipisci delectus corporis, sapiente ipsam consequatur aliquid non! Quam perferendis
-              nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas!</p>
+            <p>
+            are sent to donors and organizations during key stages, ensuring transparency and accountability throughout the process. are sent to donors and organizations during key stages, ensuring transparency and accountability throughout the process.
+              </p>
           </div>
         </div>
         <div className='works'>
           <div className="works_text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat eos. Vitae totam tempora nihil quia esse! Animi dicta aspernatur ipsum illumillum nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
-              nesciunt excepturi odit quisquam sequi distinctio, explicabo, adipisci delectus corporis, sapiente ipsam consequatur aliquid non! Quam perferendis
-              nisi et fugit! Porro odio dicta eligendi possimus quae ipsa? Voluptas!</p>
+            <p>
+            By bridging the gap between donors and organizations, Purnota promotes charitable giving. It ensures donated resources are effectively managed and reach those who need them.              </p>
           </div>
           <img className="works_img" src={works1} alt="" />
         </div >
@@ -136,33 +149,37 @@ function AboutUs() {
       <div className="lw-0">
         <div className="lw-1">
           <Card style={{ width: '18rem' }}>
-            <Card.Img style={{ height: '15rem' }} variant="top" src={logo} />
+            <Card.Img style={{ height: '15rem' }} variant="top" src={img8} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Founder</Card.Title>
+              <Card.Title>xyz</Card.Title>
             </Card.Body>
           </Card>
         </div>
         <div className="lw-1">
           <Card style={{ width: '18rem' }}>
-            <Card.Img style={{ height: '15rem' }} variant="top" src={logo} />
+            <Card.Img style={{ height: '15rem' }} variant="top" src={img8} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Founder</Card.Title>
+              <Card.Title>abc</Card.Title>
             </Card.Body>
           </Card>
         </div>
         <div className="lw-1">
           <Card style={{ width: '18rem' }}>
-            <Card.Img style={{ height: '15rem' }} variant="top" src={logo} />
+            <Card.Img style={{ height: '15rem' }} variant="top" src={img8} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>founder</Card.Title>
+              <Card.Title>xyz</Card.Title>
             </Card.Body>
           </Card>
         </div>
         <div className="lw-1">
           <Card style={{ width: '18rem' }}>
-            <Card.Img style={{ height: '15rem' }} variant="top" src={logo} />
+            <Card.Img style={{ height: '15rem' }} variant="top" src={img8} />
             <Card.Body>
-              <Card.Title>Card Title</Card.Title>
+              <Card.Title>Team Lead</Card.Title>
+              <Card.Title>abc</Card.Title>
             </Card.Body>
           </Card>
         </div>
