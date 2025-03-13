@@ -27,7 +27,7 @@ function HomePage() {
       "Turn Your Discards into<br/> Treasures: Creating a Donation Platform<br/> for Reusable Items"
 
         <div className='Donate_button_frontpage'>
-        <Button style={{width:'105px'}} variant="outline-light" onClick={donatepage}>Donate Now</Button>{' '}
+        <Button style={{width:'105px', position:"absolute", left:"24px"}} variant="outline-light" onClick={donatepage}>Donate Now</Button>{' '}
 
         </div>
       </div>

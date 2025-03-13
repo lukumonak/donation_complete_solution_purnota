@@ -28,6 +28,7 @@
 .logo{
     /* font-size: 30px; */
     cursor: pointer;
+    margin-bottom: 17px;
 }
 .nv-links{
     display: flex;
@@ -72,7 +73,6 @@ li{
 button{
     border: none;
     background: none;
-    position: absolute;
   left: 86%;
 }
 

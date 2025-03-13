@@ -11,6 +11,10 @@ import { ImCross } from 'react-icons/im'
 import { useLogout } from "../hooks/useLogout";
 import { useAuthContext } from "../hooks/useAuthContext";
 import HomePage from "../Pages/HomePage";
+import { BiDonateBlood } from "react-icons/bi";
+import { TbLogout } from "react-icons/tb";
+import { PiSignInBold } from "react-icons/pi";
+
 function Nvbar() {
   const [mobile, setMobile] = useState(false);
   const navigate = useNavigate()
@@ -22,53 +26,47 @@ function Nvbar() {
     navigate('/login')
   }
 
-  const HomeP=()=>{
+  const HomeP = () => {
     navigate('/')
 
   }
 
   return (
-    <nav className="nvbr">
+    <nav className="nvbr ">
       <div className="container1">
-        <h3 className="logo" onClick={HomeP}>Purnota</h3>
+        <h3 className="logo h2" onClick={HomeP}><BiDonateBlood /> Purnota</h3>
 
-        <ul className={mobile ? "nv-links-mobile" : "nv-links"}>
+        <ul className={mobile ? "nv-links-mobile " : "nv-links"} >
           <Link to='/'><li>Home</li></Link>
           <Link to='/aboutus'><li>About Us</li></Link>
           <Link to='/help'><li>Need Help</li></Link>
           <Link to='/donate'><li>Donate</li></Link>
           <Link to='/signuporg'><li>signuporg</li></Link>
-          <li>
-            <Navbar >
 
-              <Navbar.Toggle aria-controls="navbar-dark-example" />
-              <Navbar.Collapse id="navbar-dark-example" >
-                <Nav>
-                  <NavDropdown
-                    title="Support us" 
-                    menuVariant="dark"
-                  >
-                    <NavDropdown.Item href="#action/3.1">Monitary support</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Collaboration</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Volunteer</NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-              </Navbar.Collapse>
 
-            </Navbar>
-          </li>
-          {user && (
-            <li>
-              {/* <span style={{color:'red',fontSize:'4px'}}>{user.email}</span> */}
-              <button onClick={logoutFrom} style={{ position: "absolute", left: '88px' }} >logout</button>
-            </li>
-          )}
-        {!user &&(
-           <li >
-           <button onClick={logoutFrom} style={{  position: "absolute", left: '88px' }}>login</button>
-         </li>
-        )}
-        </ul>
+        
+          </ul>
+
+          <div className="pb-3">
+            {user && (
+              <li>
+                {/* <span style={{color:'red',fontSize:'4px'}}>{user.email}</span> */}
+                <button onClick={logoutFrom} className="ml-6 h5" style={{ left: '88px', color: 'white' }} >log out <TbLogout />
+                </button>
+              </li>
+            )}
+            {!user && (
+              <li >
+                <button onClick={logoutFrom} className="ml-6 h5" style={{ left: '88px', color: 'white' }}>Sign in <PiSignInBold />
+                
+                </button>
+              </li>
+            )}
+          </div>
+          
+
+
+        
 
 
 

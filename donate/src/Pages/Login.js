@@ -2,23 +2,25 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import purnota from '../assets/puronta2.png'
 import { MdHome } from "react-icons/md";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import './login.css'
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import OuterNav from '../Components/OuterNav';
 import { useState } from 'react';
 import { useLogin } from '../hooks/useLogin';
 import { useAuthContext } from '../hooks/useAuthContext';
 import {
-    MDBBtn,
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBIcon,
-    MDBInput,
-    MDBCheckbox
+  MDBBtn,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBInput,
+  MDBCheckbox
 }
-    from 'mdb-react-ui-kit';
+  from 'mdb-react-ui-kit';
 
 const Login = () => {
 
@@ -36,10 +38,10 @@ const Login = () => {
     }
   }
 
-  const toHome=()=>{
+  const toHome = () => {
     navigate('/')
 
- }
+  }
 
 
 
@@ -49,9 +51,9 @@ const Login = () => {
       <div className="puronta" onClick={toHome}><MdHome /></div>
 
 
-{/* c:\Users\lukumoni doloi\Downloads\Blue Green Minimalist Food Donation Instagram Story.png */}
+      {/* c:\Users\lukumoni doloi\Downloads\Blue Green Minimalist Food Donation Instagram Story.png */}
 
-      <MDBContainer fluid className="p-5 my-5">
+      <MDBContainer fluid className=" pb-0 my-5">
         <MDBRow>
           <MDBCol col='5' md='6'>
             <img src={purnota} class="img-fluid" alt="Phone image" />
@@ -61,7 +63,24 @@ const Login = () => {
             <div className=" login-body">
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
+                  <Form.Label>
+
+
+
+
+
+
+                    <Dropdown className='bg-transparent text-dark' style={{marginLeft:"-38px"}}>
+                      <Dropdown.Toggle className="bg-transparent text-dark" id="dropdown-basic">
+                        Enter your Email
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                        <Dropdown.Item >As a donator</Dropdown.Item>
+                        <Dropdown.Item >As a organization</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
+
+                  </Form.Label>
                   <Form.Control type="email" placeholder="Enter email" onChange={(e) => setemail(e.target.value)} />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -70,8 +89,9 @@ const Login = () => {
                 </Form.Group>
                 {/* {error && <div className='error'>{error}</div>}     */}
                 {error && <div className='error'>Wrong credentials</div>}
-                <Button className='btn1 mt-4' type='submit'>login</Button>
-                <Link style={{display:'flex',justifyContent:"center"}} to="/signup">signup</Link>
+                <Button className='btn1 mt-2' style={{ backgroundColor: "#207882" }} type='submit'>log in</Button>
+                <Link style={{ display: 'flex', justifyContent: "center", padding: "7px", color: "#207882" }} to="/signup">Sign in</Link>
+                <Link className='d-flex justify-content-center' style={{ color: "#207882" }} to="/"> back</Link>
               </Form>
             </div>
 
@@ -79,6 +99,14 @@ const Login = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
+
+
+
+
+
+
+
+
 
 
 
