@@ -19,8 +19,8 @@ function AdminPanel() {
 
     const role = localStorage.getItem('role')
     console.log("2role", role)
-    const baseUrl = 'http://localhost:4000/api/organization/';
-    const baseUrl2 = 'http://localhost:4000/api/user/userCount';
+    const baseUrl = 'https://donation-complete-solution-purnota-80e5.onrender.com/api/organization/';
+    const baseUrl2 = 'https://donation-complete-solution-purnota-80e5.onrender.com/api/user/userCount';
     const { user } = useAuthContext()
     console.log('role')
     const [pst, setPst] = useState(null);
@@ -100,7 +100,7 @@ function AdminPanel() {
 
 
     const buttonClick = async (id) => {
-        const cng_permissionURL = `http://localhost:4000/api/user/permission/${id}`
+        const cng_permissionURL = `https://donation-complete-solution-purnota-80e5.onrender.com/api/user/permission/${id}`
         console.log(cng_permissionURL);
         const currentState = state[id];
         const newState = !currentState;
@@ -118,7 +118,7 @@ function AdminPanel() {
 
 
 
-        await axios.get(`http://localhost:4000/api/user/getuser/${id}`, {
+        await axios.get(`https://donation-complete-solution-purnota-80e5.onrender.com/api/user/getuser/${id}`, {
             responseType: "json",
         })
             .then(function (response) {
