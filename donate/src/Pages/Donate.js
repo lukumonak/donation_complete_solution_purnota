@@ -66,7 +66,7 @@ function Donate() {
       }
 
 
-      const response = await fetch('http://localhost:4000/api/oldThs/', {
+      const response = await fetch('https://donation-complete-solution-purnota-80e5.onrender.com/api/oldThs/', {
         method: 'POST',
         headers: {
           'Accept': 'Application/json',
