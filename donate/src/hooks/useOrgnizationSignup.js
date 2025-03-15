@@ -11,7 +11,7 @@ export const useOrgnizationSignup=()=>{
         setIsLoading(true)
         setError(null)
 
-        const response=await fetch('http://localhost:4000/api/user/signUp',{
+        const response=await fetch('https://donation-complete-solution-purnota-80e5.onrender.com/api/user/signUp',{
             method:'POST',
             headers: {'Content-Type': 'application/json'},
             body:JSON.stringify({email,password})
