@@ -17,7 +17,7 @@ function OrgAccess() {
   const active = localStorage.getItem('active')
   // console.log("active4", !!active) //true
 
-  const baseUrl = 'http://localhost:4000/api/oldThs/all';
+  const baseUrl = 'https://donation-complete-solution-purnota-80e5.onrender.com/api/oldThs/all';
   const { user } = useAuthContext();
 
 
@@ -46,7 +46,7 @@ function OrgAccess() {
     setShowPopup(true);
 
 
-    axios.post('http://localhost:4000/api/organization/sndMail', {email})
+    axios.post('https://donation-complete-solution-purnota-80e5.onrender.com/api/organization/sndMail', {email})
 
       .then(respone => {
           console.log("email data sent successfully", respone.data)
