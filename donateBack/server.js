@@ -11,7 +11,14 @@ const app =express()
 
 
 
-app.use(cors())
+const cors = require("cors");
+
+app.use(cors({
+    origin: "https://donation-complete-solution-purnota-ki3a.onrender.com/" 
+    methods: "GET, POST, PUT, DELETE",
+    credentials: true
+}));
+
 app.use(express.json())
 
 app.use((req, res, next)=>{
